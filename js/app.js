@@ -33,6 +33,10 @@ const createAnimal = function (form) {
     endangered.textContent = form.endangered.value;
     newAnimal.appendChild(endangered);
 
+    const food = document.createElement('p');
+    food.textContent = form.food.value;
+    newAnimal.appendChild(food);
+
     return newAnimal;
 }
 
