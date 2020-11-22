@@ -1,0 +1,33 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: darkgreen;
+    color: coral;
+}
+
+#whole-form {
+    width: 100%;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.item-in-form {
+    color: darkgreen;
+}
+
+#animals-spotted {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 10px;
+
+}
+
+.new-animal {
+    width: 100px;
+    margin: 5px;
+    padding: 5px;
+    color: darkgreen;
+    background-color: rgba(255, 127, 80, 0.728);
+    border: 1px solid darkcyan;
+    
+}

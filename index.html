@@ -8,35 +8,51 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Scottish Wildlife</h1>
+    <h1>Scottish Wildlife Spotting</h1>
     <form id="new-animal-form">
         <div id="whole-form">
             <div class="item-in-form">
-            <label for="name" class="primary">Name</label>
-            <input type="text" id="name" required/>
+            <label for="name" class="primary">Animal Name:</label>
+            <p>
+            <input type="text" id="name" placeholder="which name?" required/>
+            </p>
             </div>
 
             <div class="item-in-form">
-            <label for="species">Species</label>
+            <label for="species">Species:</label>
+            <p>
             <select name="species" id="species">
-                <option value="" disabled selected></option>
+                <option value="" disabled selected>Which species?</option>
                 <option value="Wildcat">Wildcat</option>
                 <option value="Otter">Otter</option>
                 <option value="Grey Seal">Grey Seal</option>
                 <option value="Pine Marten">Pine Marten</option>
                 <option value="Red Deer">Red Deer</option>
             </select>
+            </p>
             </div>
             <div class="item-in-form">
-                <label for="Endangered">Endangered?</label>
-                <select name="endangered" id="endangered">
-                    <option value="" disabled selected></option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
+                <label for="Where">Where?</label>
+                <p>
+                <select name="where" id="where">
+                    <option value="" disabled selected>Where did you spot them?</option>
+                    <option value="In the pond">In the pond</option>
+                    <option value="On the shore">On the shore</option>
+                    <option value="In the forest">In the forest</option>
+                    <option value="On top of the shed">On top of the shed</option>
+                    <option value="Out at sea">Out at sea</option>
                 </select>
+                </p>
+            </div>
+            <div class="item-in-form">
+            <label for="When">When did you spot them?</label>
+            <p>
+            <input type="datetime-local" id="when" name="when" value="2020-11-22T19:30">
+            </p>
             </div>
             <div class="item-in-form">
                 <label for="food">What did you feed them?</label>
+                <p>
                 <input type="radio" id="peanut-butter" name="food" value="Peanut Butter">
                 <label for="peanut-butter">Peanut Butter</label>
                 <input type="radio" id="salmon-sandwich" name="food" value="Salmon Sandwich">
@@ -45,14 +61,19 @@
                 <label for="cat-food">Cat Food</label>
                 <input type="radio" id="nothing" name="food" value="Nothing">
                 <label for="nothing">Nothing!</label>
+
+                </p>    
             </div>
-        </div>
+        
         <input type="submit" value="save"/>
+        </div>
     </form>
-    <button id="delete-all">Delete All</button>
+    
     
     <h2>Animals Spotted:</h2>
     <ul id="animals-spotted"></ul>
+
+    <button id="delete-all">Delete All</button>
           
 </body>
 </html></html>

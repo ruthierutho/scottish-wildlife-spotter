@@ -29,9 +29,13 @@ const createAnimal = function (form) {
     species.textContent = form.species.value;
     newAnimal.appendChild(species);
 
-    const endangered = document.createElement('p');
-    endangered.textContent = form.endangered.value;
-    newAnimal.appendChild(endangered);
+    const where = document.createElement('p');
+    where.textContent = form.where.value;
+    newAnimal.appendChild(where);
+
+    const when = document.createElement('p');
+    when.textContent = form.when.value;
+    newAnimal.appendChild(when);
 
     const food = document.createElement('p');
     food.textContent = form.food.value;
