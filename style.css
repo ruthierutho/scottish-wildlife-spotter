@@ -8,6 +8,17 @@ body {
     width: 100%;
     background-color: cadetblue;
     padding: 10px;
+    font-weight: bold;
+}
+
+#delete-all {
+    background-color: coral;
+    color: darkgreen;
+}
+
+#submit {
+    background-color: coral;
+    color: darkgreen;
 }
 
 .item-in-form {
