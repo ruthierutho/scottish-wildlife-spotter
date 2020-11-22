@@ -41,6 +41,10 @@ const createAnimal = function (form) {
     food.textContent = form.food.value;
     newAnimal.appendChild(food);
 
+    const enjoyment = document.createElement('p');
+    enjoyment.textContent = form.enjoyment.value;
+    newAnimal.appendChild(enjoyment);
+
     return newAnimal;
 }
 
